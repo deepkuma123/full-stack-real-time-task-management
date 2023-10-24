@@ -17,15 +17,17 @@ Follow these steps to get the project up and running on your local machine.
    ```shell
    git clone https://github.com/your-username/task-assignment.git
    cd task-assignment
-Install project dependencies:
-
+# Install project dependencies:
+```shell
 npm install
-Import the SQL Database:
+```
+## Import the SQL Database:
 
-Create a MySQL database.
-Import the provided SQL file (deepanshu.sql) into your MySQL database.
+### Create a MySQL database.
+### Import the provided SQL file (deepanshu.sql) into your MySQL database.
 
-Configure Database Connection:
+## Configure Database Connection:
+```shell
 // server.js
 
 const db = mysql.createConnection({
@@ -34,33 +36,32 @@ const db = mysql.createConnection({
   password: 'your-database-password',
   database: 'your-database-name',
 });
-
-Run the application:
-
+```
+## Run the application:
+```shell
 node server.js
-
 ```
 
-### Features
+## Features
 
-Admin Tasks: Administrators can assign tasks to users and manage them.
+#### Admin Tasks: Administrators can assign tasks to users and manage them.
 
-User Tasks: Users can view and edit tasks assigned to them.
+#### User Tasks: Users can view and edit tasks assigned to them.
 
-### Usage
+# Usage
 
-## Admin Task Assignment
+## Admin Task Assignment and management
 
-# Log in as an admin using your credentials.
+#### Log in as an admin using your credentials.
 
-# Assign tasks to users.
+#### Assign tasks to users.
 
-# View, edit, or delete tasks.
+#### View, edit, or delete tasks.
 
-### User Task Management
+## User Task Management
 
-# Log in as a user using your credentials.
+#### Log in as a user using your credentials.
 
-# View tasks assigned to you.
+#### View tasks assigned to you.
 
-# Edit task details and in the details user can only update the status of the file.
+#### Edit task details and in the details user can only update the status of the file.
