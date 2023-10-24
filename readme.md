@@ -1,6 +1,6 @@
-# Task Assignment System
+# Task management System
 
-A simple task assignment system for managing tasks, users, and statuses. This README provides an overview of the project setup and usage.
+A simple task management system for managing tasks, users, and statuses. This README provides an overview of the project setup and usage.
 
 ## Getting Started
 
