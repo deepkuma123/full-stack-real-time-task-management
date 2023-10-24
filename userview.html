@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <h2 class="heading">tasks assigned by the user</h2>
+    <table class="fixed_headers" border="1">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Assign name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="task-list">
+            <!-- User's tasks will be displayed here dynamically -->
+        </tbody>
+    </table>
+    
+    <h2 class="heading">Edit Task</h2>
+    <div class="form-container">
+
+        <form id="edit-task-form">
+            <div class="form-field multi-input">
+            <label for="user">Select User:</label>
+            <select id="user" name="user" required></select>
+        </div>
+      
+        <div class="form-field input-right">
+            <label for="task">Task:</label>
+            <input type="text" id="task" name="task" required>
+          </div>
+      
+          <div class="form-field input-right">
+              <label for = "description">Description:</label>
+              <textarea id="description" name="description" required></textarea>
+            </div>
+            
+            <div class="form-field multi-input">
+            <label for="status">Status:</label>
+            <select id="status" name="status" id="status" required></select>
+            
+        </select>
+          </div>
+      
+          <div class="form-field submit-field">
+            <button class="button button-block" type="submit">update status</button>
+          </div>
+    </form>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="user.js"></script>
+</body>
+</html>

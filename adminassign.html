@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Task Assign | Task Management</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1 class="heading">assign tasks to the users</h1>
+    <div class="form-container ">
+        <form id="assign-task-form">
+            <div class="form-field multi-input">
+            <label for="user">Select User:</label>
+            <select id="user" name="user" required></select>
+    </div>
+      
+          <div class="form-field input-right">
+            <label for="task">Task:</label>
+            <input type="text" id="task" name="task" required>
+          </div>
+      
+          <div class="form-field input-right">
+            <label for = "description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+          </div>
+      
+          <div class="form-field multi-input">
+            <label for="status">Status:</label>
+        <select id="status" name="status" id="status" required></select>
+   
+            </select>
+          </div>
+      
+          <div class="form-field submit-field">
+            <button  type="submit">Assign Task</button>
+          </div>
+        </form>
+      </div>
+    
+    <h1 class="heading">Assigned Tasks</h1>
+    <table class="fixed_headers" border="1">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Assign name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="task-list">
+            <!-- Task data will be displayed here dynamically -->
+        </tbody>
+    </table>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="assign.js"></script>
+</body>
+</html>
