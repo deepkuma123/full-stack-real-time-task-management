@@ -36,7 +36,7 @@ const db = mysql.createConnection({
 });
 
 Run the application:
-
+```shell
 node server.js
 
 and in the browser enter the url http://localhost:3000/
@@ -44,28 +44,30 @@ and in the browser enter the url http://localhost:3000/
 ```
 # NOTE: 
 
-##this url take you to the login.html page
+### this url take you to the login.html page
 
-### Features
+# Features
 
-Admin Tasks: Administrators can assign tasks to users and manage them.
+## Admin Tasks: 
 
-User Tasks: Users can view and edit tasks assigned to them.
+#### Administrators can assign tasks to users and manage them.
 
-### Usage
+#### User Tasks: Users can view and edit tasks assigned to them.
+
+# Usage
 
 ## Admin Task Assignment
 
-# Log in as an admin using your credentials.
+#### Log in as an admin using your credentials.
 
-# Assign tasks to users.
+#### Assign tasks to users.
 
-# View, edit, or delete tasks.
+#### View, edit, or delete tasks.
 
-### User Task Management
+# User Task Management
 
-# Log in as a user using your credentials.
+#### Log in as a user using your credentials.
 
-# View tasks assigned to you.
+#### View tasks assigned to you.
 
-# Edit task details and in the details user can only update the status of the file.
+#### Edit task details and in the details user can only update the status of the file.
