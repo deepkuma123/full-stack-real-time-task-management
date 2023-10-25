@@ -1,6 +1,6 @@
-# Task management System
+# Task Assignment System
 
-A simple task management system for managing tasks, users, and statuses. This README provides an overview of the project setup and usage.
+A simple task assignment system for managing tasks, users, and statuses. This README provides an overview of the project setup and usage.
 
 ## Getting Started
 
@@ -17,17 +17,15 @@ Follow these steps to get the project up and running on your local machine.
    ```shell
    git clone https://github.com/your-username/task-assignment.git
    cd task-assignment
-# Install project dependencies:
-```shell
+Install project dependencies:
+
 npm install
-```
-## Import the SQL Database:
+Import the SQL Database:
 
-### Create a MySQL database.
-### Import the provided SQL file (deepanshu.sql) into your MySQL database.
+Create a MySQL database.
+Import the provided SQL file (deepanshu.sql) into your MySQL database.
 
-## Configure Database Connection:
-```shell
+Configure Database Connection:
 // server.js
 
 const db = mysql.createConnection({
@@ -36,32 +34,38 @@ const db = mysql.createConnection({
   password: 'your-database-password',
   database: 'your-database-name',
 });
-```
-## Run the application:
-```shell
+
+Run the application:
+
 node server.js
+
+and in the browser enter the url http://localhost:3000/
+
 ```
+# NOTE: 
 
-## Features
+##this url take you to the login.html page
 
-#### Admin Tasks: Administrators can assign tasks to users and manage them.
+### Features
 
-#### User Tasks: Users can view and edit tasks assigned to them.
+Admin Tasks: Administrators can assign tasks to users and manage them.
 
-# Usage
+User Tasks: Users can view and edit tasks assigned to them.
 
-## Admin Task Assignment and management
+### Usage
 
-#### Log in as an admin using your credentials.
+## Admin Task Assignment
 
-#### Assign tasks to users.
+# Log in as an admin using your credentials.
 
-#### View, edit, or delete tasks.
+# Assign tasks to users.
 
-## User Task Management
+# View, edit, or delete tasks.
 
-#### Log in as a user using your credentials.
+### User Task Management
 
-#### View tasks assigned to you.
+# Log in as a user using your credentials.
 
-#### Edit task details and in the details user can only update the status of the file.
+# View tasks assigned to you.
+
+# Edit task details and in the details user can only update the status of the file.
