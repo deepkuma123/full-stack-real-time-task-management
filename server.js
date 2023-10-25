@@ -16,8 +16,20 @@ const db = mysql.createConnection({
   database: 'kumar',
 });
 
+
 app.use(bodyParser.json());
 app.use(express.static(__dirname));
+
+
+let firstTimeServerStart = true;
+// Middleware to redirect to login page on first server start
+app.use((req, res, next) => {
+  if (firstTimeServerStart) {
+    firstTimeServerStart = false;
+    return res.redirect('/login.html'); // Redirect to your login page route
+  }
+  next();
+});
 
 // Middleware for role-based access control
 function checkRole(role) {
